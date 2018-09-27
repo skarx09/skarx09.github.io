@@ -1,0 +1,96 @@
+		table, td {
+    		border: 1px solid white;
+    		border-collapse: collapse;
+    		background-color: black
+		}
+		h1{
+			font-size: 50px;
+		}
+		.r1{
+			width: 100px;
+			height: 150px;
+			color: white;
+		}
+		.r2{
+			width: 330px;
+			height: 150px;
+			text-align: left;
+			color: white;
+		}
+
+		.bc01{
+			background-image: url(xn01.jpg);
+			background-attachment: fixed;
+		}
+		.rw31{
+			width: 200px;
+			height: 250px;
+			background-image: url(thewitcher3/103.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+		.rw32{
+			width: 200px;
+			height: 250px;
+			background-image: url(thewitcher3/101.png);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+		.bc02{
+			color: white;
+		}
+		.ds31{
+			width: 200px;
+			height: 250px;
+			background-image: url(darksouls3/101.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+		.ds32{
+			width: 200px;
+			height: 250px;
+			background-image: url(darksouls3/103.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+		.sk1{
+			width: 200px;
+			height: 250px;
+			background-image: url(skyrim/101.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+		.sk2{
+			width: 200px;
+			height: 250px;
+			background-image: url(skyrim/103.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}.si1{
+			width: 200px;
+			height: 250px;
+			background-image: url(sins2/101.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+		.si2{
+			width: 200px;
+			height: 250px;
+			background-image: url(sins2/103.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+		.vmp1{
+			width: 200px;
+			height: 250px;
+			background-image: url(vampire/101.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+		.vmp2{
+			width: 200px;
+			height: 250px;
+			background-image: url(vampire/103.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
