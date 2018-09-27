@@ -1,0 +1,8 @@
+.bc{
+	background-color: black;
+	color: white;
+}
+.bd{
+	border-style: groove;
+	width: 670px;
+}

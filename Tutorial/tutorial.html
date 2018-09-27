@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="bc">
+	<h1 align="center">Tutorial em Programção de Computadores</h1><br>
+	<div>
+		<p>Programação em C não é difícil mas é composta por várias regras. Um programa em C é composto por um conjunto de Funções. Algumas regras iniciais para se ter em mente:</p>
+		<p>- A função pela qual o programa começa a ser executado chama-se main.</p>
+		<p>- Após cada cada comando em C deve-se colocar um ; (ponto-e-vírgula).</p>
+		<p>Um programa em C deve ser Identado para que possa ser lido com mais facilidade. Indentação é o processo de alinhar todos os comandos nas colunas apropriadas.</p>
+		<p>Para colocar uma linha de comentário, ou seja, uma linha que o programa não leia e sirva apenas para orientação do programador é só colocar "//" e o texto depois.</p><br>
+		<h1>Variáveis</h1><br>
+		<p>Uma Variável é uma posição de memória que pode ser identificada através de um nome.</p>
+		<p>Podem ter seu conteúdo alterado por um comando de atribuição.</p>
+		<p>Após a atribuição mudam de valor. Exemplo:</p>
+		<div class="bd">
+			<p>int a, b; // Aonde "int" é o tipo de variável e "a, b" são 2 variáveis</p>
+			<p>a = 3; // Aqui a variável "a" está recebendo(=) o valor 3</p>
+			<p>b = a * 2; // Variável "b" recebe o dobro do valor de "a", então "b" recebe o valor 6</p>
+			<p>c = a + b + 2; // A variável c está recebendo "a" + "b" + 2, então nesse caso seria 3 + 6 + 2 = 11</p>
+		</div><br>
+		<h2>Tipos de Variáveis</h2><br>
+		<p>Todas as variáveis em C tem um tipo.</p>
+		<p>Cada tipo define os valores que a variável pode armazenar.</p>
+		<p>Cada tipo ocupa uma certa quantidade de memória.</p>
+		<table border="1" width="600">
+			<tr>
+				<th>Tipo</th>
+				<th>Valores Válidos</th>
+			</tr>
+			<tr>
+				<td width="84">char(%c)</td>
+				<td width="400">Letras e símbolos:'a','b','H','^','*','1','0'</td>
+			</tr>
+			<tr>
+				<td width="84">int(%d)</td>
+				<td width="400">Conjunto dos números inteiros</td>
+			</tr>
+			<tr>
+				<td width="84">float(%f)</td>
+				<td width="400">Conjunto dos números reais</td>
+			</tr>
+		</table><br>
+		<h1>Entrada e Saída</h1><br>
+		<p>Para que o usuário do programa consiga entender a finalidade do programa e consiga utiliza-lo é preciso que seja feita a "saída" de informações e a "entrada" de dados.</p>
+		<p>A entrada de dados (ou leitura) no C é feita através do comando "scanf" e a saída com o comando "printf".</p>
+		<p>O printf deve ter um parentêses após ele e o texto deve ser digitado entre aspas: printf("Texto teste");</p>
+		<p>Já o scanf é mais complicado por ser preciso declarar a variável que será "lida" e por ser preciso também usar o indicador(&) antes da variável: Supondo que a variável "exemplo" é do tipo "char" --> scanf("%c",&exemplo);</p>
+		<p>Agora, quando for utilizar o printf com alguma variável que foi "lida" será preciso declarar o tipo de variável assim como no scanf, mas como é um texto, essa variável deverá ficar no lugar de onde ficaria a palavra. Exemplo:</p>
+		<div class="bd">
+			<p>main(){</p><br>
+			<p>&nbsp&nbsp float nota;</p>
+			<p>&nbsp&nbsp char aluno;</p><br>
+			<p>&nbsp&nbsp printf("Digite o nome do aluno:");</p>
+			<p>&nbsp&nbsp scanf("%c", &aluno);</p>
+			<p>&nbsp&nbsp printf("Digite a nota de matematica do aluno:");</p>
+			<p>&nbsp&nbsp scanf("%f", &nota);</p>
+			<p>&nbsp&nbsp printf("O %c está com %f em matematica.); //Aonde "%c" será o nome do aluno e "%f" será sua nota.</p>
+			<p>}</p>
+		</div>
+		<h1>Atribuição</h1><br>
+		<p>Atribuição ou "receber" um valor é como foi demonstrado no exemplo anterior quando você altera o valor de uma variável. Essa atribuição pode ser feita a qualquer momento do programa. Voltando no exemplo anterior, "a" recebeu o valor "3" mas poderia adicionar outra linha de comando em algum momento que atribui outro valor a "a".</p>
+		<div class="bd">
+			<p>int a, b;</p>
+			<p>a = 3;</p>
+			<p>b = a * 2;</p>
+			<p>c = a + b + 2;</p>
+			<p>a = 20 // Agora "a" que tinha o valor "3", teve seu valor alterado pra "20".</p>
+		</div><br>
+		<h1>Condição</h1>
+		<p>A condição na linguagem C é definida como uma expressão que poder verdadeira ou falsa.</p>
+		<p>Exemplo: (3>2) --> Verdadeiro, porque 3 é maior que 2.</p>
+		<p>Os operadores relacionais usados no C são:</p>
+		<table border="1" width="200">
+			<tr>
+				<td>==</td>
+				<td>Igual a</td>
+			</tr>
+			<tr>
+				<td>!=</td>
+				<td>Diferente de</td>
+			</tr>
+			<tr>
+				<td>>=</td>
+				<td>Maior ou igual</td>
+			</tr>
+			<tr>
+				<td>></td>
+				<td>Maior que</td>
+			</tr>
+			<tr>
+				<td><</td>
+				<td>Menor que</td>
+			</tr>
+			<tr>
+				<td><=</td>
+				<td>Menor ou igual</td>
+			</tr>
+		</table>
+		<p>Existem também os operadores lógicos:</p>
+		<table border="1" width="200">
+			<tr>
+				<td>||</td>
+				<td>OU lógico</td>
+			</tr>
+			<tr>
+				<td>&&</td>
+				<td>E lógico</td>
+			</tr>
+			<tr>
+				<td>!</td>
+				<td>Negação</td>
+			</tr>
+		</table><br>
+		<h2>SE e SENÃO</h2><br>
+		<p>O "se" e "senão" é muito importante para fazer condições no C. Na Linguagem C o "se" é representado por "if" e o "senão" é representado por"else". Exemplo de um programa usando "if else":</p>
+		<div class="bd">
+			<p>main(){</p>
+			<p>&nbsp&nbsp int num;</p>
+			<p>&nbsp&nbsp printf("Digite um numero, se for menor que 10 a cor e Azul, se for maior ou igual a 10 a cor sera Verde:);</p>
+			<p>&nbsp&nbsp scanf("%d",&num);</p>
+			<p>&nbsp&nbsp if(num < 10){</p>
+			<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp printf("Cor Azul")</p>
+			<p>&nbsp&nbsp }else</p>
+			<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp printf("Cor Verde")</p>
+			<p>}</p>
+		</div><br>
+		<h1>Repetição</h1><br>
+		<p>O comando "while" no C permite que um trecho do programa seja executado ENQUANTO uma certa condição for VERDADEIRA. Sua estrutura funciona da seguinte maneira:</p>
+		<div class="bd">
+			<p>while(condição){</p>
+			<p>//Os comandos que serão executados ficam aqui.</p>
+			<p>//Lembrando que podem ser mais que uma linha de comando.</p>
+			<p>}</p>
+			<p>//E aqui podem ser colocados outros comandos caso a condição do "while" se torne FALSA.</p>
+		</div>
+		<p>Ou seja, supondo que o usuário tenha que digitar algum número(x) e se esse número digitado for 1, que apareça a mensagem 123456, a estrutura ficaria dessa forma:</p>
+		<div class="bd">
+			<p>while(x == 1){</p>
+			<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp printf("123456");</p>
+			<p>}</p>
+		</div>
+	</div>
+</body>
+</html>
