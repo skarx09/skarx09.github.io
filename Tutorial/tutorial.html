@@ -51,9 +51,9 @@
 		<p>Agora, quando for utilizar o printf com alguma variável que foi "lida" será preciso declarar o tipo de variável assim como no scanf, mas como é um texto, essa variável deverá ficar no lugar de onde ficaria a palavra. Exemplo:</p>
 		<div class="bd">
 			<pre>
-			<p>main(){</p><br>
+			<p>main(){</p>
 			<p>	float valor;</p>
-			<p>	char aluno;</p><br>
+			<p>	char aluno;</p>
 			<p>	printf("Digite o nome do aluno:");</p>
 			<p>	scanf("%c", &aluno);</p>
 			<p>	printf("Digite a nota de matematica do aluno:");</p>
@@ -120,15 +120,17 @@
 		<h2>SE e SENÃO</h2><br>
 		<p>O "se" e "senão" é muito importante para fazer condições no C. Na Linguagem C o "se" é representado por "if" e o "senão" é representado por"else". Exemplo de um programa usando "if else":</p>
 		<div class="bd">
+			<pre>
 			<p>main(){</p>
-			<p>&nbsp&nbsp int num;</p>
-			<p>&nbsp&nbsp printf("Digite um numero, se for menor que 10 a cor e Azul, se for maior ou igual a 10 a cor sera Verde:);</p>
-			<p>&nbsp&nbsp scanf("%d",&num);</p>
-			<p>&nbsp&nbsp if(num < 10){</p>
-			<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp printf("Cor Azul")</p>
-			<p>&nbsp&nbsp }else</p>
-			<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp printf("Cor Verde")</p>
+			<p>	int num;</p>
+			<p>	printf("Digite um numero, se for menor que 10 a cor e Azul, se for maior ou igual a 10 a cor sera Verde:);</p>
+			<p>	scanf("%d",&num);</p>
+			<p>	if(num < 10){</p>
+			<p>		printf("Cor Azul")</p>
+			<p>	}else</p>
+			<p>		printf("Cor Verde")</p>
 			<p>}</p>
+			</pre>
 		</div><br>
 		<h1>Repetição</h1><br>
 		<p>O comando "while" no C permite que um trecho do programa seja executado ENQUANTO uma certa condição for VERDADEIRA. Sua estrutura funciona da seguinte maneira:</p>
@@ -141,9 +143,11 @@
 		</div>
 		<p>Ou seja, supondo que o usuário tenha que digitar algum número(x) e se esse número digitado for 1, que apareça a mensagem 123456, a estrutura ficaria dessa forma:</p>
 		<div class="bd">
+			<pre>
 			<p>while(x == 1){</p>
-			<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp printf("123456");</p>
+			<p>	printf("123456");</p>
 			<p>}</p>
+			</pre>
 		</div>
 	</div>
 </body>
