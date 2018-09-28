@@ -50,15 +50,19 @@
 		<p>Já o scanf é mais complicado por ser preciso declarar a variável que será "lida" e por ser preciso também usar o indicador(&) antes da variável: Supondo que a variável "exemplo" é do tipo "char" --> scanf("%c",&exemplo);</p>
 		<p>Agora, quando for utilizar o printf com alguma variável que foi "lida" será preciso declarar o tipo de variável assim como no scanf, mas como é um texto, essa variável deverá ficar no lugar de onde ficaria a palavra. Exemplo:</p>
 		<div class="bd">
+			<pre>
+			<code>
 			<p>main(){</p><br>
-			<p>&nbsp&nbsp float valor;</p>
-			<p>&nbsp&nbsp char aluno;</p><br>
-			<p>&nbsp&nbsp printf("Digite o nome do aluno:");</p>
-			<p>&nbsp&nbsp scanf("%c", &aluno);</p>
-			<p>&nbsp&nbsp printf("Digite a nota de matematica do aluno:");</p>
-			<p>&nbsp&nbsp scanf("%f", &valor);</p>
-			<p>&nbsp&nbsp printf("O %c está com %f em matematica.); //Aonde "%c" será o nome do aluno e "%f" será sua nota.</p>
+			<p>	float valor;</p>
+			<p>	char aluno;</p><br>
+			<p>	printf("Digite o nome do aluno:");</p>
+			<p>	scanf("%c", &aluno);</p>
+			<p>	printf("Digite a nota de matematica do aluno:");</p>
+			<p>	scanf("%f", &valor);</p>
+			<p>	printf("O %c está com %f em matematica.",aluno,valor); //Aonde "%c" será o nome do aluno e "%f" será sua nota.</p>
 			<p>}</p>
+			</code>
+			</pre>
 		</div>
 		<h1>Atribuição</h1><br>
 		<p>Atribuição ou "receber" um valor é como foi demonstrado no exemplo anterior quando você altera o valor de uma variável. Essa atribuição pode ser feita a qualquer momento do programa. Voltando no exemplo anterior, "a" recebeu o valor "3" mas poderia adicionar outra linha de comando em algum momento que atribui outro valor a "a".</p>
