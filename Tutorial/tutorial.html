@@ -49,7 +49,7 @@
 		<p>O printf deve ter um parentêses após ele e o texto deve ser digitado entre aspas: printf("Texto teste");</p>
 		<p>Já o scanf é mais complicado por ser preciso declarar a variável que será "lida" e por ser preciso também usar o indicador(&) antes da variável: Supondo que a variável "exemplo" é do tipo "char" --> scanf("%c",&exemplo);</p>
 		<p>Agora, quando for utilizar o printf com alguma variável que foi "lida" será preciso declarar o tipo de variável assim como no scanf, mas como é um texto, essa variável deverá ficar no lugar de onde ficaria a palavra. Exemplo:</p>
-		<div class="bd">
+		<div>
 			<pre>
 			<code>
 			<p>main(){</p><br>
@@ -59,7 +59,8 @@
 			<p>	scanf("%c", &aluno);</p>
 			<p>	printf("Digite a nota de matematica do aluno:");</p>
 			<p>	scanf("%f", &valor);</p>
-			<p>	printf("O %c está com %f em matematica.",aluno,valor); //Aonde "%c" será o nome do aluno e "%f" será sua nota.</p>
+			<p>	printf("O %c está com %f em matematica.",aluno,valor);</p>
+			<p> 	//Aonde "%c" será o nome do aluno e "%f" será sua nota.
 			<p>}</p>
 			</code>
 			</pre>
