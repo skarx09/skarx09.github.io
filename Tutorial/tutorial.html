@@ -46,14 +46,13 @@
 		<h1>Entrada e Saída</h1><br>
 		<p>Para que o usuário do programa consiga entender a finalidade do programa e consiga utiliza-lo é preciso que seja feita a "saída" de informações e a "entrada" de dados.</p>
 		<p>A entrada de dados (ou leitura) no C é feita através do comando "scanf" e a saída com o comando "printf".</p>
-		<p>Mas para que o computador entenda esses dois comandos é preciso adicionar uma "biblioteca" usando uma linha de comando antes do "main", que é: #include <stdio.h>.</p>
+		<p>Mas para que o computador entenda esses dois comandos é preciso adicionar uma "biblioteca" usando uma linha de comando antes do "main", que é: #include &ltstdio.h&gt.</p>
 		<p>O printf deve ter um parentêses após ele e o texto deve ser digitado entre aspas: printf("Texto teste");</p>
 		<p>Já o scanf é mais complicado por ser preciso declarar a variável que será "lida" e por ser preciso também usar o indicador(&) antes da variável: Supondo que a variável "exemplo" é do tipo "char" --> scanf("%c",&exemplo);</p>
 		<p>Agora, quando for utilizar o printf com alguma variável que foi "lida" será preciso declarar o tipo de variável assim como no scanf, mas como é um texto, essa variável deverá ficar no lugar de onde ficaria a palavra. Exemplo:</p>
 		<div class="bd">
 			<pre>
-			<code>
-			<p>#include <stdio.h> </p>
+			<p>#include &ltstdio.h&gt </p>
 			<p>main(){</p>
 			<p>	float valor;</p>
 			<p>	char aluno;</p>
@@ -64,7 +63,6 @@
 			<p>	printf("O %c está com %f em matematica.",aluno,valor);</p>
 			<p> 	//Aonde "%c" será o nome do aluno e "%f" será sua nota.
 			<p>}</p>
-			</code>
 			</pre>
 		</div>
 		<h1>Atribuição</h1><br>
