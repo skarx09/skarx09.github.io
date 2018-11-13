@@ -5,42 +5,28 @@ var saldo;
 var tempo;
 var cont;
 var acumulo;
-var borracha;
-
+var erase;
 function init(){
 	btn = document.getElementById("btn_calc");
 	btn.addEventListener("click", delga);
 	btn.addEventListener("click", test );
 }
-function delga(){
-	
-	borracha = document.getElementById("pelotempo");
-	borracha.innerHTML='';
-	
-	
+function txtdelete(){	
+	erase = document.getElementById("pelotempo");
+	erase.innerHTML='';		
 }
-
 function test(){
-
 	capital = Number(document.getElementById("CapIni").value);
 	juros = Number(document.getElementById("Juros").value);
 	tempo = Number(document.getElementById("Time").value);
 	if(Number.isNaN(capital) || Number.isNaN(juros) || Number.isNaN(tempo)){
 		var rr = document.getElementById("resultado");
-		rr.innerHTML = "Valor(es) Inválido(os), favor corrigir!";
-		
+		rr.innerHTML = "Valor(es) Inválido(os), favor corrigir!";	
 	}
 	else{
 		calcula();
 	}
 }
-
-
-
-
-
-
-
 function calcula(){
 	for(cont= 1;cont <= tempo;cont++){
 		saldo = capital*Math.pow(1+(juros/100),cont);
@@ -48,11 +34,9 @@ function calcula(){
 		acumulo.innerHTML += "Capital durante o "+cont+"°" +"Mês é: "+saldo+"." + "<br>";
 		document.body.appendChild(acumulo);
 	}
-
 	saldo = capital*Math.pow(1+(juros/100),tempo);
 	var r = document.getElementById("resultado");
 	r.innerHTML = "Seu Saldo:" + saldo;
-
 }
 init();//Chamar a budega da função 
 
