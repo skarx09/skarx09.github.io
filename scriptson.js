@@ -1,8 +1,8 @@
- var btn;
-var capital;
+var btn;
+var cap;
 var juros;
 var saldo;
-var tempo;
+var qtmeses;
 var cont;
 var acumulo;
 
@@ -12,41 +12,31 @@ function init(){
 	btn.addEventListener("click", test );
 }
 function test(){
-
-	capital = Number(document.getElementById("CapIni").value);
+	cap = Number(document.getElementById("CapIni").value);
 	juros = Number(document.getElementById("Juros").value);
-	tempo = Number(document.getElementById("Time").value);
+	qtmeses = Number(document.getElementById("Time").value);
  
-	if(Number.isNaN(capital) || Number.isNaN(juros) || Number.isNaN(tempo)){
+	if(Number.isNaN(cap) || Number.isNaN(juros) || Number.isNaN(qtmeses)){
 		var rr = document.getElementById("resultado");
-		rr.innerHTML = "Valor(es) Inválido(os), favor corrigir!";
-		
+		rr.innerHTML = "Valor(es) Inválido(os), favor corrigir!";	
 	}
 	else{
 		calcula();
 	}
 }
-
-
-
-
-
-
-
 function calcula(){
-	for(cont= 1;cont <= tempo;cont++){
-		saldo = capital*Math.pow(1+(juros/100),cont);
-		acumulo = document.getElementById("pelotempo");
-		acumulo.innerHTML += "Capital durante o "+cont+"°" +"Mês é: "+saldo+"." + "<br>";
+	for(cont= 1;cont <= qtmeses;cont++){
+		saldo = cap*Math.pow(1+(juros/100),cont);
+		acumulo = document.getElementById("tempototal");
+		$("div").text("");
+		acumulo.innerHTML += "Capital durante o "+cont+"°" +" Mês é: "+saldo+"." + "<br>";
 		document.body.appendChild(acumulo);
 	}
-
-	saldo = capital*Math.pow(1+(juros/100),tempo);
+	saldo = cap*Math.pow(1+(juros/100),qtmeses);
 	var r = document.getElementById("resultado");
-	r.innerHTML = "Seu Saldo:" + saldo;
-
+	r.innerHTML = "Seu Saldo: " + saldo;
 }
-init();//Chamar a budega da função 
+init();
 
 
 /*Primeiro Erro, as informações utilizadas na estrutura de repetição estão se sobrepond;
