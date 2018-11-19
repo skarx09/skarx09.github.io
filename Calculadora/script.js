@@ -9,16 +9,19 @@ var erase;
 function init(){
 	btn = document.getElementById("btn_calc");
 	btn.addEventListener("click", txtdelete);
-	btn.addEventListener("click", test );
 }
 function txtdelete(){	
 	erase = document.getElementById("tempototal");
-	erase.innerHTML='';		
+	erase.innerHTML='';
+	cap = document.getElementById("CapIni").value;
+	juros = document.getElementById("Juros").value;
+	qtmeses = document.getElementById("Time").value;
+	cap = Number(parseFloat(cap.replace(',','.')));
+	juros = Number(parseFloat(juros.replace(',','.')));
+	qtmeses = Number(parseFloat(qtmeses.replace(',','.')));
+	test();
 }
 function test(){
-	cap = Number(document.getElementById("CapIni").value);
-	juros = Number(document.getElementById("Juros").value);
-	qtmeses = Number(document.getElementById("Time").value);
 	if(Number.isNaN(cap) || Number.isNaN(juros) || Number.isNaN(qtmeses)){
 		var rr = document.getElementById("result");
 		rr.innerHTML = "Valor(es) Inválido(os), favor corrigir!";	
