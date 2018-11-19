@@ -40,6 +40,6 @@ function calcula(){
 	}
 	saldo = cap*Math.pow(1+(juros/100),qtmeses);
 	var r = document.getElementById("result");
-	r.innerHTML = "Seu Saldo:" + pct;
+	r.innerHTML = "Seu Saldo: " + pct;
 }
 init();
